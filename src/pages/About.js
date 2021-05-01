@@ -18,7 +18,7 @@ const About = () => {
       <CharContainer>
         <Character
           image={characterAbout}
-          description="Front-facing character programming on his computer"
+          description="Front-facing character programming on his computer."
         />
       </CharContainer>
       <Card>

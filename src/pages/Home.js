@@ -26,7 +26,7 @@ const Home = () => {
       <CharContainer>
         <Character
           image={characterHome}
-          description="Sideways character programming on his computer"
+          description="Sideways character programming on his computer."
         />
       </CharContainer>
     </CenterContainer>

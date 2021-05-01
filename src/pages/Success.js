@@ -33,7 +33,7 @@ const Success = () => {
       <CharContainer>
         <Character
           image={CharacterAbout}
-          description="Front-facing character programming on his computer"
+          description="Front-facing character programming on his computer."
         />
       </CharContainer>
     </CenterContainer>
