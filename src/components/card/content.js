@@ -77,7 +77,7 @@ export const Content = ({ home, about, skills, success, children }) => {
           <>
             Hi there 😁, I’m an enthusiastic Software Engineer
             <br /> and Frontend Developer from Peru 🇵🇪. <br />
-            Because the technology industry is a highly changing enviroment 🧐,{' '}
+            Because the technology industry is a highly changing environment 🧐,{' '}
             <br />I enjoy learning new technologies by myself since 2019 😍👌.
           </>
         ) : success ? (
