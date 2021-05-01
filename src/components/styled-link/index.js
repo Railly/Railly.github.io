@@ -14,7 +14,7 @@ const StyledLink = styled(LinkRouter)`
   padding-top: 1em;
   padding-bottom: 1em;
   &:hover {
-    color: #00a6c0;
+    color: ${({ theme }) => theme.hover};
   }
 `
 export default StyledLink

@@ -37,6 +37,7 @@ export const lightTheme = {
   secondaryButtonBg: globalTheme.secondaryButtonBg,
   secondaryButtonFg: cream,
   description: darkGrey,
+  hover: darkBlue,
 }
 
 export const darkTheme = {
@@ -58,4 +59,5 @@ export const darkTheme = {
   secondaryButtonBg: globalTheme.secondaryButtonBg,
   secondaryButtonFg: white,
   description: white,
+  hover: green,
 }
