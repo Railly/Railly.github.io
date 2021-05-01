@@ -1,21 +1,21 @@
-import React from 'react'
-import styled from 'styled-components'
-import darkGithub from '../../images/dark-github.svg'
+import React from "react";
+import styled from "styled-components";
+import darkGithub from "../../images/dark-github.svg";
 
-import { Card, TitleWrapper, ContentWrapper, Title } from './'
-import { Button } from '../button'
-import { device } from '../../devices'
+import { Card, TitleWrapper, ContentWrapper, Title } from "./";
+import { Button, Anchor } from "../button";
+import { device } from "../../devices";
 
 const Img = styled.img`
   width: 100%;
   height: 100%;
   margin: 1.5em 0;
-`
+`;
 const Icon = styled.img`
   width: 20%;
   height: 20%;
   margin-left: 0.5em;
-`
+`;
 const ButtonContainer = styled.div`
   display: flex;
   @media ${device.mobileS} {
@@ -30,8 +30,8 @@ const ButtonContainer = styled.div`
   @media ${device.laptopL} {
     flex-direction: row;
   }
-`
-export const WorkCard = ({ title, thumbnail, tech }) => {
+`;
+export const WorkCard = ({ title, thumbnail, tech, repo }) => {
   return (
     <>
       <Card work>
@@ -45,16 +45,16 @@ export const WorkCard = ({ title, thumbnail, tech }) => {
           </span>
           <Img src={thumbnail} al={`${title} screenshot`} />
           <ButtonContainer>
-            <Button secondary>
+            <Button to={repo} as={Anchor} secondary>
               <div
                 style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
                 }}
               >
                 <span>Code</span>
-                <Icon src={darkGithub} alt="github icon" />{' '}
+                <Icon src={darkGithub} alt="github icon" />{" "}
               </div>
             </Button>
             <Button primary>
@@ -64,5 +64,5 @@ export const WorkCard = ({ title, thumbnail, tech }) => {
         </ContentWrapper>
       </Card>
     </>
-  )
-}
+  );
+};
