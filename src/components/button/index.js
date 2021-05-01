@@ -77,7 +77,7 @@ export const Linker = props => (
 )
 
 export const Anchor = props => (
-  <a href={props.to} target="_blank">
+  <a href={props.to} target="_blank" rel="noreferrer">
     <Button {...props} children={props.children} />
   </a>
 )
