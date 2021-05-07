@@ -5,6 +5,7 @@ import { WorkContainer } from '../components/container'
 import { WorkCard } from '../components/card'
 
 import passwordGenerator from '../images/password-generator.png'
+import scheduleCreator from '../images/schedule-creator.jpeg'
 
 const Work = () => {
   useLayoutEffect(() => {
@@ -22,11 +23,11 @@ const Work = () => {
           demo="https://expo.io/@axra11/projects/PassGen"
         />
         <WorkCard
-          title="Project N 1"
-          thumbnail={passwordGenerator}
+          title="Schedule Creator"
+          thumbnail={scheduleCreator}
           tech="React JS"
-          repo="https://github.com/Railly/PassGen"
-          demo="https://expo.io/@axra11/projects/PassGen"
+          repo="https://github.com/Railly/schedule-creator"
+          demo="https://schedule-creator.vercel.app/"
         />
         <WorkCard
           title="Project 2"

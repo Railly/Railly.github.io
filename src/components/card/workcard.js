@@ -43,7 +43,7 @@ export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
             ✔ <strong>Technology:</strong>
             <br /> {tech}
           </span>
-          <Img src={thumbnail} al={`${title} screenshot`} />
+          <Img src={thumbnail} alt={`${title} screenshot`} />
           <ButtonContainer>
             <Button to={repo} as={Anchor} secondary>
               <div
