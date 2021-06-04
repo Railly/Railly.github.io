@@ -34,15 +34,21 @@ const Work = () => {
           title="Under Building..."
           thumbnail={underBuilding}
           tech="..."
-          repo="#"
-          demo="#"
         />
         <WorkCard
           title="Under Building..."
           thumbnail={underBuilding}
           tech="..."
-          repo="#"
-          demo="#"
+        />
+        <WorkCard
+          title="Under Building..."
+          thumbnail={underBuilding}
+          tech="..."
+        />
+        <WorkCard
+          title="Under Building..."
+          thumbnail={underBuilding}
+          tech="..."
         />
       </WorkContainer>
       <Button route="/contact" as={Linker} contact>
