@@ -31,22 +31,22 @@ const Work = () => {
           demo="https://schedule-creator.vercel.app/"
         />
         <WorkCard
-          title="Under Building..."
+          title="Under Construction..."
           thumbnail={underBuilding}
           tech="..."
         />
         <WorkCard
-          title="Under Building..."
+          title="Under Construction..."
           thumbnail={underBuilding}
           tech="..."
         />
         <WorkCard
-          title="Under Building..."
+          title="Under Construction..."
           thumbnail={underBuilding}
           tech="..."
         />
         <WorkCard
-          title="Under Building..."
+          title="Under Construction..."
           thumbnail={underBuilding}
           tech="..."
         />
