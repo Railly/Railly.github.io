@@ -32,6 +32,11 @@ const ButtonContainer = styled.div`
   }
 `
 export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
+  const altText =
+    title === 'Under Building...'
+      ? 'Foto de Fernando Arcos en Pexels'
+      : `${title} screenshot`
+
   return (
     <>
       <Card work>
@@ -43,7 +48,7 @@ export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
             ✔ <strong>Technology:</strong>
             <br /> {tech}
           </span>
-          <Img src={thumbnail} alt={`${title} screenshot`} />
+          <Img src={thumbnail} alt={altText} />
           <ButtonContainer>
             <Button to={repo} as={Anchor} secondary>
               <div
