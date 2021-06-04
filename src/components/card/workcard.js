@@ -49,23 +49,27 @@ export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
             <br /> {tech}
           </span>
           <Img src={thumbnail} alt={altText} />
-          <ButtonContainer>
-            <Button to={repo} as={Anchor} secondary>
-              <div
-                style={{
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}
-              >
-                <span>Code</span>
-                <Icon src={darkGithub} alt="github icon" />{' '}
-              </div>
-            </Button>
-            <Button to={demo} as={Anchor} primary>
-              <span>Live 🔴</span>
-            </Button>
-          </ButtonContainer>
+          {title !== 'Under Building...' ? (
+            <ButtonContainer>
+              <Button to={repo} as={Anchor} secondary>
+                <div
+                  style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                  }}
+                >
+                  <span>Code</span>
+                  <Icon src={darkGithub} alt="github icon" />{' '}
+                </div>
+              </Button>
+              <Button to={demo} as={Anchor} primary>
+                <span>Live 🔴</span>
+              </Button>
+            </ButtonContainer>
+          ) : (
+            ''
+          )}
         </ContentWrapper>
       </Card>
     </>
