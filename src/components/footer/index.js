@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FooterWrapper = styled.div`
-  position: fixed;
   width: 100%;
   bottom: 0em;
   font-size: 0.88em;
+  position: fixed;
 `
 
 const FooterComponent = styled.div`
   display: flex;
-  height: 4em;
+  height: 3em;
   color: ${({ theme }) => theme.title};
   justify-content: center;
   align-items: center;

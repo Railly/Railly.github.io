@@ -22,7 +22,6 @@ const Logo = styled.img`
   height: 3em;
   width: 7em;
 `
-
 const Header = ({ theme }) => {
   const [menuOpen, setMenuOpen] = useState(false)
 

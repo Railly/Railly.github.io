@@ -9,7 +9,6 @@ import { device } from '../../devices'
 const Img = styled.img`
   width: 100%;
   height: 100%;
-  margin: 1.5em 0;
 `
 const Icon = styled.img`
   width: 20%;
@@ -31,7 +30,13 @@ const ButtonContainer = styled.div`
     flex-direction: row;
   }
 `
-export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
+
+const Span = styled.span`
+  line-height: 2em;
+  margin: 2em 0;
+`
+
+export const WorkCard = ({ title, thumbnail, repo, demo, children }) => {
   const altText =
     title === 'Under Construction...'
       ? 'Foto de Fernando Arcos en Pexels'
@@ -44,11 +49,8 @@ export const WorkCard = ({ title, thumbnail, tech, repo, demo }) => {
           <Title content={title} />
         </TitleWrapper>
         <ContentWrapper>
-          <span>
-            ✔ <strong>Technology:</strong>
-            <br /> {tech}
-          </span>
           <Img src={thumbnail} alt={altText} />
+          <Span>✔ {children}</Span>
           {title !== 'Under Construction...' ? (
             <ButtonContainer>
               <Button to={repo} as={Anchor} secondary>

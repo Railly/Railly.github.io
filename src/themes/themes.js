@@ -1,4 +1,4 @@
-export const cream = '#FFEFD5'
+export const cream = '#FFFFFF'
 export const darkGrey = '#49575F'
 const mediumGrey = '#5F7174'
 const lightGrey = '#6A888C'
@@ -8,6 +8,8 @@ const lightBlue = '#32D9CB'
 const white = '#FFF'
 const disabledGreen = '#BCCEA8'
 const disabledDarkGrey = '#707477'
+const transparency = '44'
+const shadowTransparency = '22'
 
 const globalTheme = {
   braces: green,
@@ -20,6 +22,8 @@ const globalTheme = {
 
 export const lightTheme = {
   name: 'light',
+  header: `${cream}${transparency}`,
+  shadow: `#000000${transparency}`,
   body: cream,
   text: mediumGrey,
   title: cream,
@@ -42,6 +46,8 @@ export const lightTheme = {
 
 export const darkTheme = {
   name: 'dark',
+  header: `${darkGrey}${transparency}`,
+  shadow: `${cream}${shadowTransparency}`,
   body: darkGrey,
   text: white,
   title: white,

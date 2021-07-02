@@ -6,7 +6,7 @@ export const CenterContainer = styled.div`
   justify-content: center;
   align-items: center;
 
- @media ${device.mobileS} {
+  @media ${device.mobileS} {
     justify-content: center;
     flex-direction: ${props => (props.work ? 'column' : 'row')};
   }
@@ -23,6 +23,7 @@ export const CenterContainer = styled.div`
   @media ${device.laptopL} {
     justify-content: ${props => (props.contact ? 'center' : 'space-evenly')};
     flex-direction: row;
+  }
 `
 
 export const AboutContainer = styled.div`
@@ -44,23 +45,19 @@ export const AboutContainer = styled.div`
 `
 
 export const WorkContainer = styled.div`
-  display: grid;
-  justify-items: center;
-  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media ${device.mobileS} {
-    grid-template-columns: 100%;
   }
   @media ${device.tablet} {
-    grid-template-columns: 100%;
   }
 
   @media ${device.laptop} {
-    grid-template-columns: 100%;
   }
 
   @media ${device.laptopL} {
-    grid-template-columns: 50% 50%;
   }
 `
 

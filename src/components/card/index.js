@@ -6,15 +6,15 @@ export const Card = styled.section`
   flex-direction: column;
   width: 35em;
   margin: 2em;
-  box-shadow: 1px 13px 30px 5px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 1px 13px 30px 5px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 1px 13px 30px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 13px 30px 5px ${({ theme }) => theme.shadow};
+  -webkit-box-shadow: 1px 13px 30px 5px ${({ theme }) => theme.shadow};
+  -moz-box-shadow: 1px 13px 30px 5px ${({ theme }) => theme.shadow};
 
-@media ${device.mobileS} {
+  @media ${device.mobileS} {
     position: relative;
     max-width: ${props => {
       if (props.work) {
-        return '20em'
+        return '70vw'
       }
     }};
   }
@@ -33,12 +33,12 @@ export const Card = styled.section`
       }
       return '6em'
     }};
-    min-width: 35em;
+    min-width: 70vw;
   }
   @media ${device.laptop} {
     position: relative;
     margin-top: 2em;
-    min-width: 40em;
+    min-width: 90%;
   }
 
   @media ${device.laptopL} {
@@ -49,10 +49,11 @@ export const Card = styled.section`
         return '5em'
       }
       if (props.work) {
-        return '40em'
+        return '70vw'
       }
       return '50em'
-    }}
+    }};
+  }
 `
 export const TitleWrapper = styled.section`
   display: flex;
@@ -68,11 +69,10 @@ export const TitleWrapper = styled.section`
 `
 export const ContentWrapper = styled.section`
   display: flex;
-  widht: 50em;
+  //widht: 50em;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1em 1em;
   text-align: center;
   background: ${({ theme }) => theme.backgroundContent};
   line-height: 120%;

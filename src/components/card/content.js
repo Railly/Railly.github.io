@@ -3,8 +3,7 @@ import styled from 'styled-components'
 import { device } from '../../devices'
 
 const ContentComponent = styled.div`
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
   color: ${props => {
     if (props.highlight) {
       return ({ theme }) => theme.highlight
@@ -64,21 +63,29 @@ export const Content = ({ home, about, skills, success, children }) => {
       <ContentComponent description>
         {home ? (
           <>
-            Hi, Software Engineer here! I really enjoy creating solutions👨‍💻.
+            Bienvenido a mi portafolio 😜
+            <br />
+            Soy un Desarrollador Frontend con residencia en Perú 🇵🇪
             <br />
             <ContentComponent highlight>
-              Take a look at my work!
+              Puedes hechar un vistazo a mis proyectos dando clic aquí
             </ContentComponent>
-            or...
+            o...
             <br />
-            Read a little bit about me.
+            Puedes leer un poco acerca de mí 😮
           </>
         ) : about ? (
           <>
-            Hi there 😁, I’m an enthusiastic Software Engineer
-            <br /> and Frontend Developer from Peru 🇵🇪. <br />
-            Because the technology industry is a highly changing environment 🧐,{' '}
-            <br />I enjoy learning new technologies by myself since 2019 😍👌.
+            Soy un estudiante de la carrera de Ingeniería de Software de UNMSM,
+            Perú.
+            <br />
+            Actualmente estoy desempeñandome cono Desarrollador Frontend con
+            React, pero tengo pensado llegar a ser FullStack.
+            <br />
+            Me divierto aprendiendo nuevas técnicas de desarrollo y technologías
+            de vanguardia, de esta manera, procuro mejorar día a día con
+            práctica constante 😇✅
+            <br />
           </>
         ) : success ? (
           <ContentComponent description>
@@ -97,17 +104,17 @@ export const Content = ({ home, about, skills, success, children }) => {
       <ContentComponent>
         {home && (
           <Button route="/about" as={Linker} secondary>
-            About
+            Acerca de mí
           </Button>
         )}
         {about && (
           <Button route="/skills" as={Linker} secondary>
-            My Skills
+            Skills
           </Button>
         )}
         {!skills && !success && (
           <Button route="/work" as={Linker} primary>
-            My Work
+            Proyectos
           </Button>
         )}
       </ContentComponent>

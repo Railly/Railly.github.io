@@ -24,12 +24,12 @@ const Skills = () => {
           </TitleWrapper>
           <ContentWrapper>
             <Content skills>
-              <p>✔ Self-learning 🤓</p>
-              <p>✔ Troubleshooting 🔨</p>
-              <p>✔ High empathy 👌</p>
-              <p>✔ Desire to learn 🧐</p>
-              <p>✔ Communication 🙋‍♂️</p>
-              <p>✔ Teamwork 🤜🤛</p>
+              <p>✔ Autodidácta 🤓</p>
+              <p>✔ Iniciativa 🔨</p>
+              <p>✔ Alta empatía 👌</p>
+              <p>✔ Deseo de aprender 🧐</p>
+              <p>✔ Comunicación 🙋‍♂️</p>
+              <p>✔ Trabaje en equipo 🤜🤛</p>
             </Content>
           </ContentWrapper>
         </Card>
@@ -44,23 +44,24 @@ const Skills = () => {
               <SkillsContainer>
                 <div style={{ marginRight: '1.5em' }}>
                   <p>
-                    ✔ Functional <br />
-                    Programming
+                    ✔ Programación <br />
+                    Funcional
                   </p>
                   <p>✔ Javascript ES6+</p>
                   <p>✔ HTML 5, CSS3 </p>
                   <p>✔ NPM & Yarn </p>
                 </div>
                 <div>
-                  <p>✔ React JS (This page 😊)</p>
-                  <p>✔ React Native with Expo</p>
+                  <p>✔ React JS (Esta página 😊)</p>
+                  <p>✔ Next.js (Styled JSX)</p>
                   <p>✔ Styled Components</p>
                   <p>✔ Git: Control Version</p>
+                  <p>✔ Figma</p>
                 </div>
               </SkillsContainer>
             </Content>
             <Button route="/work" as={Linker} primary>
-              My Work
+              Proyectos
             </Button>
           </ContentWrapper>
         </Card>
