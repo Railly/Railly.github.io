@@ -20,7 +20,7 @@ const Skills = () => {
       <CenterContainer>
         <Card skills>
           <TitleWrapper>
-            <Title content="Soft Skills" />
+            <Title content="Habilidades Blandas" />
           </TitleWrapper>
           <ContentWrapper>
             <Content skills>
@@ -37,7 +37,7 @@ const Skills = () => {
       <CenterContainer>
         <Card skills>
           <TitleWrapper>
-            <Title content="Technical Skills" />
+            <Title content="Habilidades Técnicas" />
           </TitleWrapper>
           <ContentWrapper>
             <Content skills>

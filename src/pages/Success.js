@@ -18,7 +18,7 @@ const Success = () => {
     <CenterContainer>
       <Card>
         <TitleWrapper>
-          <Title content="Thank you" />
+          <Title content="Mensaje enviado" />
         </TitleWrapper>
         <ContentWrapper>
           <Content success />

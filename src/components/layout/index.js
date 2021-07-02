@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
           {children}
         </main>
       </>
-      <Footer content="Made by @RaillyHugo" />
+      <Footer content="Hecho por @RaillyHugo 🐺" />
     </ThemeProvider>
   )
 }

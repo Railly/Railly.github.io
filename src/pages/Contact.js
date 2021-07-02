@@ -83,42 +83,42 @@ const Contact = ({ history }) => {
     <CenterContainer contact>
       <Card contact>
         <TitleWrapper>
-          <Title content="Contact" />
+          <Title content="Contacto" />
         </TitleWrapper>
         <Form onSubmit={onSubmit}>
           <InputWrapper>
-            <Label>Name: </Label>
+            <Label>Nombre: </Label>
             <Input
               type="text"
               name="from_name"
-              placeholder="Your name"
+              placeholder="Tu nombre"
               value={toSend.from_name}
               onChange={handleChange}
             />
           </InputWrapper>
           <InputWrapper>
-            <Label>Email: </Label>
+            <Label>Correo: </Label>
             <Input
               type="email"
               name="reply_to"
-              placeholder="Your email"
+              placeholder="Tu correo"
               value={toSend.reply_to}
               onChange={handleChange}
             />
           </InputWrapper>
           <InputWrapper>
-            <Label>Message: </Label>
+            <Label>Mensaje: </Label>
             <Textarea
               type="text"
               name="message"
-              placeholder="Your message"
+              placeholder="Tu mensaje"
               value={toSend.message}
               onChange={handleChange}
             />
           </InputWrapper>
           <ButtonWrapper>
             <Button type="submit" disabled={disabled} primary={primary}>
-              Submit
+              Enviar
             </Button>
           </ButtonWrapper>
         </Form>

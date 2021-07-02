@@ -89,12 +89,11 @@ export const Content = ({ home, about, skills, success, children }) => {
           </>
         ) : success ? (
           <ContentComponent description>
-            I will answer your email shortly.
+            Muchas gracias por escribirme ... !! ⚡
             <br />
+            Estaré respondiendo en breve.
             <br />
-            You can check my social media 😇
-            <br />
-            <br />
+            Puedes revisar mis redes sociales 🙋‍♂️
           </ContentComponent>
         ) : (
           <>{children}</>

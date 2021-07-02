@@ -23,7 +23,7 @@ const About = () => {
       </CharContainer>
       <Card>
         <TitleWrapper>
-          <Title content="About" />
+          <Title content="Acerca de mí" />
         </TitleWrapper>
         <ContentWrapper>
           <Content about />

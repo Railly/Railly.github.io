@@ -46,19 +46,19 @@ const Header = ({ theme }) => {
         right
       >
         <StyledLink route="/" onClick={() => closeMenu()}>
-          <div>{'{ Home }'}</div>
+          <div>{'{ Inicio }'}</div>
         </StyledLink>
         <StyledLink route="/about" onClick={() => closeMenu()}>
-          <div>{'{ About }'}</div>
+          <div>{'{ Acerca de mí }'}</div>
         </StyledLink>
         <StyledLink route="/skills" onClick={() => closeMenu()}>
           <div>{'{ Skills }'}</div>
         </StyledLink>
         <StyledLink route="/work" onClick={() => closeMenu()}>
-          <div>{'{ Work }'}</div>
+          <div>{'{ Proyectos }'}</div>
         </StyledLink>
         <StyledLink route="/contact" onClick={() => closeMenu()}>
-          <div>{'{ Contact }'}</div>
+          <div>{'{ Contacto }'}</div>
         </StyledLink>
         <a href="https://twitter.com/RaillyHugo">
           <img
