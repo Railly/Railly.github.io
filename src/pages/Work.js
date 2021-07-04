@@ -9,6 +9,7 @@ import scheduleCreator from '../images/schedule-creator.jpeg'
 import underBuilding from '../images/under_building.jpg'
 import foody from '../images/foody.png'
 import portfolio from '../images/portfolio.png'
+import buttonComponents from '../images/button-components.png'
 
 const Work = () => {
   useLayoutEffect(() => {
@@ -37,9 +38,24 @@ const Work = () => {
         </WorkCard>
 
         <WorkCard
+          title="Librería de botones"
+          thumbnail={buttonComponents}
+          repo="https://github.com/Railly/button-components"
+          demo="https://button-components-drab.vercel.app/"
+        >
+          Aplicación hecha con Next.js🖤.
+          <br />
+          ✅Desafí de devChallenges.io
+          <br />
+          ✅Styled JSX <br />
+          ✅Clean Code
+          <br />
+          ✅Deploy en Vercel <br />
+        </WorkCard>
+
+        <WorkCard
           title="Generador de contraseñas"
           thumbnail={passwordGenerator}
-          tech="React Native"
           repo="https://github.com/Railly/PassGen"
           demo="https://expo.io/@axra11/projects/PassGen"
         >
@@ -57,7 +73,6 @@ const Work = () => {
         <WorkCard
           title="Creador de Horarios"
           thumbnail={scheduleCreator}
-          tech="React JS"
           repo="https://github.com/Railly/schedule-creator"
           demo="https://schedule-creator.vercel.app/"
         >
@@ -74,7 +89,6 @@ const Work = () => {
         <WorkCard
           title="Portafolio 2021"
           thumbnail={portfolio}
-          tech="React JS"
           repo="https://github.com/Railly/portfolio-2021"
           demo="https://www.raillyhugo.com/"
         >
